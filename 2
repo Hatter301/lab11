@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a,b,s,i;
+	cin >> a >> b;
+	i = b;
+	if (a <= b)
+		cout << "Данные введены некорректно";
+	else {
+		while (a > b)
+			b = b + i;
+		if (b > a)
+			b = b - i;
+		cout << a - b;
+	}
+}
