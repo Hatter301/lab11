@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int k=0;
+	double p, s=1000,h;
+	cin >> p;
+	if ((p <= 0) or (p >= 25))
+		cout << "Данные введены некорректно";
+	else {
+		h = s * (p / 100);
+		while (s <= 1100) {
+			s = s + h;
+			k++;
+			h = s * (p / 100);
+		}
+		cout << k <<" "<< s;
+	}
+}
