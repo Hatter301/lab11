@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int a, b,i;
+	cin >> a >> b;
+	if ((a >= b) or (a<0) or (b<0))
+		cout << "Данные введены некорректно";
+	else {
+		while (a <= b) {
+			i = a;
+			while (i != 0) {
+				cout << a << " ";
+				i = i - 1;
+			}
+			cout << endl;
+			a = a + 1;
+		}
+	}
+}
