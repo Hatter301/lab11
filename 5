@@ -3,6 +3,9 @@ using namespace std;
 int main() {
 	int a, b;
 	cin >> a >> b;
+	if ((a<=0) or (b<=0))
+	cout<<"Данные введены некорректно";
+	else {
 	while (a != b)
 		if (a > b)
 			a = a - b;
@@ -11,4 +14,5 @@ int main() {
 	if (a == 1)
 		cout << "Числа взаимно просты (НОД=1)";
 	else cout << a;
+	}
 }
