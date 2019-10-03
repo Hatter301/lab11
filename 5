@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b;
+	cin >> a >> b;
+	while (a != b)
+		if (a > b)
+			a = a - b;
+		else
+			b = b - a;
+	if (a == 1)
+		cout << "Числа взаимно просты (НОД=1)";
+	else cout << a;
+}
