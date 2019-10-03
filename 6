@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int n,k=3,t,a=1,b=1;
+	cin >>n;
+	if (n <= 1)
+		cout << "Данные введены некорректно";
+	else {
+		t = a + b;
+		a = b;
+		b = t;
+		while (t!= n) {
+			t = a + b;
+			a = b;
+			b = t;
+				k++;
+		}
+		cout << k;
+	}
+}
